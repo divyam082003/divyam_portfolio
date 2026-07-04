@@ -64,9 +64,3 @@ Email: divyam08102003@gmail.com
 LinkedIn: https://www.linkedin.com/in/div2003/
 
 GitHub: https://github.com/divyam082003
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
