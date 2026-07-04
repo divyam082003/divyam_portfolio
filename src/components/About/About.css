@@ -1,0 +1,317 @@
+.about-section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 24px;
+    font-family:Inter,sans-serif;
+}
+
+/* ---------- Heading ---------- */
+
+.about-header{
+    margin-bottom:20px;
+}
+
+.about-header span{
+    font-size:.82rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--primary);
+}
+
+.about-header h2{
+    margin-top:10px;
+    font-size:2.3rem;
+    font-weight:700;
+    color:var(--heading);
+}
+
+/* ---------- About ---------- */
+
+.about-content{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.about-content p{
+    font-size:1rem;
+    line-height:1.85;
+    color:var(--text);
+}
+
+.about-content strong{
+    color:var(--heading);
+    font-weight:600;
+}
+
+/* ---------- Chips ---------- */
+
+.about-chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:6px;
+}
+
+.about-chips span{
+
+    padding:7px 13px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:500;
+
+    background:var(--chip-bg);
+
+    border:1px solid var(--card-border);
+
+    color:var(--chip-text);
+
+    transition:.3s;
+
+}
+
+.about-chips span:hover{
+
+    background:var(--primary-soft);
+
+    border-color:var(--card-border-hover);
+
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Education ---------- */
+
+.education-card{
+
+    margin-top:28px;
+
+    display:grid;
+
+    grid-template-columns:4fr 1fr;
+
+    align-items:center;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--card-border);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.education-card:hover{
+
+    border-color:var(--card-border-hover);
+
+    box-shadow:var(--shadow);
+
+}
+
+.education-left{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:28px;
+
+}
+
+.edu-icon{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:14px;
+
+    background:var(--primary-soft);
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+    margin-top:4px;
+
+}
+
+.edu-content h3{
+
+    font-size:1rem;
+
+    margin-bottom:8px;
+
+    color:var(--heading);
+
+}
+
+.edu-content h4{
+
+    font-size:1rem;
+
+    margin-bottom:6px;
+
+    color:var(--heading);
+
+}
+
+.edu-content p{
+
+    color:var(--text);
+
+    margin-bottom:8px;
+
+}
+
+.edu-content span{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+/* ---------- CGPA ---------- */
+
+.education-right{
+
+    height:100%;
+
+    border-left:1px solid var(--card-border);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.award-icon{
+
+    color:#FACC15;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.education-right small{
+
+    color:var(--text-light);
+
+    letter-spacing:1px;
+
+    font-size:.72rem;
+
+    margin-bottom:6px;
+
+}
+
+.education-right h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--heading);
+
+}
+
+.education-right h2 span{
+
+    font-size:1rem;
+
+    color:var(--text-light);
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.about-section{
+
+    padding:60px 20px;
+
+}
+
+.about-header h2{
+
+    font-size:2rem;
+
+}
+
+.about-content p{
+
+    font-size:.95rem;
+
+}
+
+.about-chips{
+
+    gap:8px;
+
+}
+
+.about-chips span{
+
+    font-size:.75rem;
+
+    padding:7px 11px;
+
+}
+
+.education-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.education-left{
+
+    padding:22px;
+
+}
+
+.education-right{
+
+    border-left:none;
+
+    border-top:1px solid var(--card-border);
+
+    padding:18px;
+
+}
+
+.education-right h2{
+
+    font-size:1.8rem;
+
+}
+
+}

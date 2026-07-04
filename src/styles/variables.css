@@ -1,0 +1,166 @@
+/* ==========================================================
+   DARK THEME (DEFAULT)
+========================================================== */
+
+:root{
+
+    /* ---------- Background ---------- */
+
+    --bg:#050816;
+    --surface:#0B1120;
+    --surface-2:#111827;
+
+    --section-bg:transparent;
+    --section-tint:#0A1020;
+
+    /* ---------- Cards ---------- */
+
+    --card-bg:rgba(255,255,255,.03);
+    --card-hover:#141824;
+
+    --card-border:rgba(255,255,255,.08);
+    --card-border-hover:rgba(91,140,255,.35);
+
+    /* ---------- Text ---------- */
+
+    --heading:#F8FAFC;
+    --text:#CBD5E1;
+    --text-light:#94A3B8;
+    --text-muted:#6B7280;
+
+    /* ---------- Brand ---------- */
+
+    --primary:#5B8CFF;
+    --primary-hover:#4C7BF4;
+    --primary-soft:rgba(91,140,255,.12);
+
+    --secondary:#7DD3FC;
+
+    /* ---------- Buttons ---------- */
+
+    --btn-primary-bg:linear-gradient(135deg,#5B8CFF,#7C3AED);
+    --btn-primary-text:#FFFFFF;
+
+    --btn-secondary-bg:rgba(255,255,255,.04);
+    --btn-secondary-hover:rgba(255,255,255,.09);
+    --btn-secondary-text:#F8FAFC;
+
+    /* ---------- Navbar ---------- */
+
+    --navbar-bg:rgba(18,18,18,.18);
+    --navbar-scroll-bg:rgba(15,15,15,.45);
+
+    --navbar-link:#CBD5E1;
+    --navbar-link-hover:#FFFFFF;
+    --navbar-link-hover-bg:rgba(255,255,255,.08);
+
+    /* ---------- Icons ---------- */
+
+    --icon-color:#F8FAFC;
+
+    --icon-bg:rgba(255,255,255,.05);
+
+    --icon-hover-color:#FFFFFF;
+
+    --icon-hover-bg:rgba(91,140,255,.18);
+
+    /* ---------- Chips ---------- */
+
+    --chip-bg:#10151F;
+    --chip-text:#ECECEC;
+
+    /* ---------- Borders ---------- */
+
+    --border:rgba(255,255,255,.08);
+
+    /* ---------- Misc ---------- */
+
+    --radius:24px;
+
+    --shadow:0 18px 45px rgba(0,0,0,.30);
+
+}
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+[data-theme="light"]{
+
+    /* ---------- Background ---------- */
+
+    --bg:#F8FAFC;
+    --surface:#FFFFFF;
+    --surface-2:#F1F5F9;
+
+    --section-bg:transparent;
+    --section-tint:#F8FAFC;
+
+    /* ---------- Cards ---------- */
+
+    --card-bg:#FFFFFF;
+
+    --card-hover:#F8FAFC;
+
+    --card-border:rgba(15,23,42,.08);
+    --card-border-hover:rgba(91,140,255,.30);
+
+    /* ---------- Text ---------- */
+
+    --heading:#0F172A;
+    --text:#334155;
+    --text-light:#64748B;
+    --text-muted:#94A3B8;
+
+    /* ---------- Brand ---------- */
+
+    --primary:#5B8CFF;
+    --primary-hover:#4C7BF4;
+    --primary-soft:rgba(91,140,255,.10);
+
+    --secondary:#7DD3FC;
+
+    /* ---------- Buttons ---------- */
+
+    --btn-primary-bg:linear-gradient(135deg,#5B8CFF,#7C3AED);
+    --btn-primary-text:#FFFFFF;
+
+    --btn-secondary-bg:#FFFFFF;
+    --btn-secondary-hover:#F3F4F6;
+    --btn-secondary-text:#0F172A;
+
+    /* ---------- Navbar ---------- */
+
+    --navbar-bg:rgba(255,255,255,.72);
+    --navbar-scroll-bg:rgba(255,255,255,.88);
+
+    --navbar-link:#475569;
+    --navbar-link-hover:#0F172A;
+    --navbar-link-hover-bg:#EEF2FF;
+
+    /* ---------- Icons ---------- */
+
+    --icon-color:#334155;
+
+    --icon-bg:#FFFFFF;
+
+    --icon-hover-color:#5B8CFF;
+
+    --icon-hover-bg:rgba(91,140,255,.10);
+
+    /* ---------- Chips ---------- */
+
+    --chip-bg:#F1F5F9;
+    --chip-text:#334155;
+
+    /* ---------- Borders ---------- */
+
+    --border:rgba(15,23,42,.08);
+
+    /* ---------- Misc ---------- */
+
+    --radius:24px;
+
+    --shadow:0 16px 40px rgba(15,23,42,.08);
+
+}

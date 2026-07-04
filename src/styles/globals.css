@@ -1,0 +1,209 @@
+@import "tailwindcss";
+@import "./variables.css";
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:var(--bg);
+    color:var(--text);
+
+    font-family:Inter,sans-serif;
+
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font:inherit;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:Inter,sans-serif;
+    color:var(--heading);
+    font-weight:700;
+}
+
+p{
+    color:var(--text);
+}
+
+/* ==========================================================
+   GLOBAL MOUSE GLOW
+========================================================== */
+
+.mouseGlow{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:500px;
+    height:500px;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124,58,237,.15),
+            transparent 70%
+        );
+
+    filter:blur(60px);
+
+    z-index:-1;
+}
+
+/* ==========================================================
+   SECTION BACKGROUNDS
+========================================================== */
+
+.section-dark,
+.section-tint{
+
+    position:relative;
+    width:100%;
+    overflow:hidden;
+
+}
+
+/* ---------- Normal Section ---------- */
+
+.section-dark{
+
+    background:var(--section-bg);
+
+}
+
+/* ---------- Alternate Section ---------- */
+
+.section-tint{
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--primary-soft) 0%,
+            transparent 50%,
+            var(--primary-soft) 100%
+        );
+
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+
+}
+
+/* ---------- Background Glow ---------- */
+
+.section-tint::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-260px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            var(--primary-soft),
+            transparent 72%
+        );
+
+    filter:blur(70px);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+/* ---------- Content ---------- */
+
+.section-dark > *,
+.section-tint > *{
+
+    position:relative;
+    z-index:1;
+
+}
+
+/* ---------- Divider ---------- */
+
+.section-tint::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:180px;
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--border),
+            transparent
+        );
+
+}

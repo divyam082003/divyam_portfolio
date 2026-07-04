@@ -1,0 +1,240 @@
+.certifications-section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 24px 90px;
+    font-family:Inter,sans-serif;
+}
+
+/* ---------- Heading ---------- */
+
+.cert-header{
+    text-align:center;
+    margin-bottom:34px;
+}
+
+.cert-header span{
+    display:block;
+    font-size:.82rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--primary);
+}
+
+.cert-header h2{
+    color:var(--heading);
+}
+
+.cert-header p{
+    margin-top:14px;
+    max-width:650px;
+    margin-inline:auto;
+    color:var(--text);
+    line-height:1.8;
+    font-size:1rem;
+}
+
+/* ---------- Marquee ---------- */
+
+.marquee{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    overflow:hidden;
+    
+
+    -webkit-mask-image:linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+
+    mask-image:linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%,
+        transparent
+    );
+}
+
+.marquee-track{
+    display:flex;
+    gap:18px;
+    width:max-content;
+    animation:scrollLeft 35s linear infinite;
+    padding-top: 4px;
+}
+
+.marquee-track.reverse{
+    animation:scrollRight 35s linear infinite;
+}
+
+.marquee:hover .marquee-track{
+    animation-play-state:paused;
+}
+
+@keyframes scrollLeft{
+
+from{
+    transform:translateX(0);
+}
+
+to{
+    transform:translateX(-50%);
+}
+
+}
+
+@keyframes scrollRight{
+
+from{
+    transform:translateX(-50%);
+}
+
+to{
+    transform:translateX(0);
+}
+
+}
+
+/* ---------- Card ---------- */
+
+.cert-card{
+
+    min-width:320px;
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+    padding:18px 20px;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--card-border);
+
+    border-radius:16px;
+
+    transition:.3s ease;
+}
+
+.cert-card:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary-soft);
+
+    border-color:var(--card-border-hover);
+
+    box-shadow:var(--shadow);
+}
+
+/* ---------- Icon ---------- */
+
+.cert-icon{
+
+    width:46px;
+    height:46px;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--primary-soft);
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    flex-shrink:0;
+}
+
+/* ---------- Content ---------- */
+
+.cert-content h4{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--heading);
+
+    line-height:1.5;
+}
+
+.cert-content span{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:.82rem;
+
+    color:var(--text-light);
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.certifications-section{
+
+    padding:60px 20px 70px;
+
+}
+
+.cert-header{
+
+    margin-bottom:28px;
+
+}
+
+.cert-header p{
+
+    font-size:.94rem;
+
+}
+
+.marquee-track{
+
+    gap:14px;
+
+    animation-duration:28s;
+
+}
+
+.cert-card{
+
+    min-width:260px;
+
+    padding:16px;
+
+}
+
+.cert-icon{
+
+    width:40px;
+    height:40px;
+
+    font-size:18px;
+
+}
+
+.cert-content h4{
+
+    font-size:.88rem;
+
+}
+
+.cert-content span{
+
+    font-size:.76rem;
+
+}
+
+}
