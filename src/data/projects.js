@@ -2,51 +2,6 @@ const projects = [
   {
     id: 1,
 
-    title: "ExpoPlus",
-
-    subtitle: "Expense Tracker & Analytics Platform",
-
-    image: "/projects/expoplus.png",
-
-    link: "https://github.com/divyam082003/ExpoPlus",
-
-    tech: [
-      "Kotlin",
-      "Jetpack Compose",
-      "MVVM",
-      "Room",
-      "Supabase",
-    ],
-
-    description:
-      "Android application for tracking daily expenses with offline-first architecture, cloud synchronization, spending analytics and AI-powered financial insights.",
-  },
-
-  {
-    id: 2,
-
-    title: "CampusPay",
-
-    subtitle: "Campus Payment Platform",
-
-    image: "/projects/campuspay.png",
-
-    link: "https://github.com/divyam082003/CampusPay",
-
-    tech: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "AsyncStorage",
-    ],
-
-    description:
-      "Cross-platform digital wallet built for campus ecosystems featuring secure authentication, QR-based payments, wallet management and transaction history.",
-  },
-
-  {
-    id: 3,
-
     title: "NoteSolves",
 
     subtitle: "Engineering Study Material Platform",
@@ -68,7 +23,74 @@ const projects = [
   },
 
   {
+    id: 2,
+
+    title: "ExpoPlus",
+
+    subtitle: "Expense Tracker & Analytics Platform",
+
+    image: "/projects/expoplus.png",
+
+    link: "https://github.com/divyam082003/ExpoPlus",
+
+    tech: [
+      "Kotlin",
+      "Jetpack Compose",
+      "MVVM",
+      "Room",
+      "Supabase",
+    ],
+
+    description:
+      "Android application for tracking daily expenses with offline-first architecture, cloud synchronization, spending analytics and AI-powered financial insights.",
+  },
+
+  {
+    id: 3,
+
+    title: "Recruitment Analytics Dashboard",
+
+    subtitle: "End-to-End Recruitment Analytics",
+
+    image: "/projects/recruitment-analytics.png",
+
+    link: "https://github.com/divyam082003/recruitment_analytics_dashboard",
+
+    tech: [
+      "Google Sheets",
+      "BigQuery",
+      "SQL",
+      "Looker Studio",
+    ],
+
+    description:
+      "End-to-end analytics project analyzing 3,000 recruitment records using data cleaning, SQL-based KPI analysis and an interactive Looker Studio dashboard covering hiring funnels, sources, recruiters and candidate insights.",
+  },
+
+  {
     id: 4,
+
+    title: "CampusPay",
+
+    subtitle: "Campus Payment Platform",
+
+    image: "/projects/campuspay.png",
+
+    link: "https://github.com/divyam082003/CampusPay",
+
+    tech: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "AsyncStorage",
+    ],
+
+    description:
+      "Cross-platform digital wallet built for campus ecosystems featuring secure authentication, QR-based payments, wallet management and transaction history.",
+  },
+
+  {
+    id: 5,
 
     title: "FileNest",
 
