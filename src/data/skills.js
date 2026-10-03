@@ -8,6 +8,7 @@ import {
   FaTools,
   FaUsers,
   FaLightbulb,
+  FaChartBar
 } from "react-icons/fa";
 
 const skills = {
