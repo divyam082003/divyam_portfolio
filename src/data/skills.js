@@ -44,6 +44,8 @@ const skills = {
   "Data & Analytics": [
     { name: "Microsoft Excel", icon: FaDatabase, color: "#217346" },
     { name: "Google Sheets", icon: FaDatabase, color: "#34A853" },
+    { name: "BigQuery", icon: FaDatabase, color: "#4285F4" },
+    { name: "Looker Studio", icon: FaChartBar, color: "#F9AB00" },
   ],
 
   Competencies: [
